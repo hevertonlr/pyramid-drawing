@@ -8,7 +8,5 @@ export class MemoryPyramidRepository implements IPyramidRepository {
     this.pyramids.push(pyramid);
   }
 
-  getAll(): Pyramid[] {
-    return [...this.pyramids];
-  }
+  getAll = (): Pyramid[] => [...this.pyramids];
 }

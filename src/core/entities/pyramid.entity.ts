@@ -8,13 +8,8 @@ export class Pyramid {
     this.lines = this.generateLines();
   }
 
-  getLines(): PyramidLine[] {
-    return this.lines;
-  }
-
-  getTotalLines(): number {
-    return this.lines.length;
-  }
+  getLines = (): PyramidLine[] => this.lines;
+  getTotalLines = (): number => this.lines.length;
 
   private generateLines(): PyramidLine[] {
     const lines: PyramidLine[] = [];

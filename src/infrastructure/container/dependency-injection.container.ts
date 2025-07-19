@@ -7,20 +7,17 @@ import { CalculateStatisticsUseCase } from "../../application/use-cases/calculat
 import { CreatePyramidUseCase } from "../../application/use-cases/create-pyramid.use-case";
 import { PyramidCliController } from "../cli/pyramid-cli.controller";
 
-// Adaptadores e serviços
 const inputHandler = new ReadlineInputHandler();
 const outputPresenter = new ConsoleOutputPresenter();
 const pyramidGenerator = new PyramidGeneratorService();
 const pyramidRepository = new MemoryPyramidRepository();
 
-// Casos de uso
 const createUseCase = new CreatePyramidUseCase(
   pyramidGenerator,
   pyramidRepository
 );
 const statsUseCase = new CalculateStatisticsUseCase(pyramidRepository);
 
-// Controller CLI
 export const pyramidCliController = new PyramidCliController(
   inputHandler,
   outputPresenter,
