@@ -35,7 +35,7 @@ pyramid-drawing/
 
 ## Como rodar
 
-1. Instale dependências:
+1. Instale dependências (requer [pnpm](https://pnpm.io/)):
 
 ```bash
 pnpm install
@@ -58,5 +58,10 @@ pnpm start
 
 ```bash
 pnpm test
+```
+
+5. Verifique a cobertura dos testes:
+
+```bash
 pnpm run test:coverage
 ```

@@ -1,7 +1,7 @@
 {
   "name": "pyramid-drawing",
   "version": "1.0.0",
-  "description": "Gerador de pirâmides",
+  "description": "CLI para desenhar pirâmides com Node.js + TypeScript",
   "main": "dist/src/main.js",
   "bin": {
     "pyramid": "./dist/src/main.js"
@@ -17,9 +17,14 @@
   },
   "keywords": [
     "pyramid",
-    "shell",
-    "drawing",
-    "typescript"
+    "cli",
+    "typescript",
+    "clean-architecture",
+    "nodejs",
+    "terminal",
+    "ascii-art",
+    "jest",
+    "pnpm"
   ],
   "author": "Heverton Luan Roieski (hevertonlr@gmail.com)",
   "license": "MIT",
