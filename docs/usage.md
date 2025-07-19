@@ -1,35 +1,36 @@
-# Guia de Uso
+# Uso da aplicação Pyramid Drawing
 
-## Passos para execução
+## Execução
 
-1. Abra o terminal na pasta do projeto.
-2. Execute `npm install` para instalar as dependências.
-3. Rode `npm run dev` para executar em modo de desenvolvimento.
-4. Siga as perguntas no terminal:
-   - Informe a altura da pirâmide (ex: 5).
-   - Informe o caractere para construção (ex: `*`).
-   - Informe quantas pirâmides deseja (1, 2 ou 3) (ex: 1).
-   - Informe a orientação (`normal` ou `inversa`) (ex: `normal`).
-
-## Exemplo de saída
-
-```shell
-Resultado da(s) pirâmide(s):
-
-    *
-   ***
-  *****
- *******
-*********
-
-Total de linhas desenhadas: 5
-
-Linhas acumuladas de todas as pirâmides: 5
+```bash
+pnpm install
+pnpm run dev
 ```
 
-## Observações
+## Exemplo interativo
 
-- Caso escolha mais de 1 pirâmide, a primeira ficará invisível para simular espaçamento.
-- A altura deve ser um número inteiro maior que zero.
-- O caractere deve ser um único caractere não vazio.
-- A orientação pode ser `normal` ou `inversa`.
+```bash
+Informe a altura da pirâmide: 3
+Informe o caractere para construir a pirâmide: *
+Informe a quantidade de pirâmides (1, 2 ou 3): 2
+Informe a orientação ("normal" ou "inversa"): normal
+```
+
+### Saída esperada
+
+```
+Resultado da(s) pirâmide(s):
+
+         *    *
+        ***  ***
+       ***** *****
+
+Total de linhas desenhadas: 3
+```
+
+## Executando testes
+
+```bash
+pnpm test
+pnpm run test:coverage
+```

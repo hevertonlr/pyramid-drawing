@@ -1,6 +1,6 @@
-# Pyramid Shell
+# Pyramid Drawing
 
-Aplicação de linha de comando para desenhar pirâmides personalizadas em Node.js usando TypeScript, seguindo princípios de Clean Architecture e Clean Code.
+Aplicação de linha de comando para desenhar pirâmides personalizadas em Node.js usando TypeScript.
 
 ## Funcionalidades
 
@@ -14,14 +14,13 @@ Aplicação de linha de comando para desenhar pirâmides personalizadas em Node.
 
 - Node.js
 - TypeScript
-- Clean Architecture
+- pnpm
 - Jest para testes
 
 ## Estrutura do projeto
 
 ```
-
-pyramid-shell/
+pyramid-drawing/
 ├── src/
 │   ├── core/
 │   ├── application/
@@ -32,7 +31,6 @@ pyramid-shell/
 ├── package.json
 ├── tsconfig.json
 └── README.md
-
 ```
 
 ## Como rodar
@@ -40,24 +38,25 @@ pyramid-shell/
 1. Instale dependências:
 
 ```bash
-npm install
+pnpm install
 ```
 
 2. Execute em modo desenvolvimento:
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 3. Execute build e rode:
 
 ```bash
-npm run build
-node dist/main.js
+pnpm run build
+pnpm start
 ```
 
 4. Execute testes:
 
 ```bash
-npm test
+pnpm test
+pnpm run test:coverage
 ```

@@ -1,26 +1,32 @@
-# Contribuindo para Pyramid Shell
+# Contribuindo com Pyramid Drawing
 
-Obrigado por seu interesse em contribuir!
+Obrigado por contribuir! Siga as instruções abaixo para manter o projeto organizado.
 
 ## Como contribuir
 
-1. Fork o repositório.
-2. Crie uma branch para sua feature ou correção (`git checkout -b feature/nova-feature`).
-3. Faça commits claros e pequenos.
-4. Garanta que todos os testes estejam passando (`npm test`).
-5. Faça um pull request detalhado explicando as mudanças.
+1. Fork o projeto.
+2. Crie sua branch: `git checkout -b minha-feature`
+3. Faça commit das alterações: `git commit -m 'feat: nova funcionalidade'`
+4. Faça push: `git push origin minha-feature`
+5. Abra um Pull Request.
 
-## Código e estilo
+## Convenções
 
-- Siga a arquitetura e convenções do projeto.
-- Utilize TypeScript com tipagem forte.
-- Escreva testes para novas funcionalidades ou correções.
+- Siga Clean Code e Clean Architecture.
+- Use TypeScript fortemente tipado.
+- Escreva testes para novas funcionalidades.
+- Utilize `pnpm` para instalar dependências.
 
-## Reportando problemas
+## Scripts úteis
 
-- Use a aba de Issues do repositório.
-- Forneça detalhes claros e passos para reproduzir o problema.
+```bash
+pnpm run dev           # roda em modo desenvolvimento
+pnpm run build         # compila para dist/
+pnpm test              # roda testes
+pnpm run test:coverage # roda testes com coverage
+pnpm run clean         # remove dist/
+```
 
 ## Licença
 
-Este projeto está licenciado sob a licença MIT.
+MIT

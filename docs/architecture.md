@@ -1,29 +1,40 @@
-# Documentação da Arquitetura
+# Arquitetura - Pyramid Drawing
 
-## Visão geral
+Este projeto segue a arquitetura limpa (Clean Architecture) dividida em camadas:
 
-A aplicação segue a **Clean Architecture**, separando responsabilidades em camadas:
+## Camadas
 
-- **Core**: entidades e regras de negócio pura.
-- **Application**: casos de uso e interfaces (ports).
-- **Infrastructure**: adaptadores, frameworks, implementação concreta dos ports.
-- **Shared**: utilitários e tipos compartilhados.
+### Core (Regra de negócio)
 
-## Fluxo da aplicação
+- `entities/`: Entidades do domínio.
+- `value-objects/`: Objetos de valor imutáveis.
+- `exceptions/`: Exceções específicas de domínio.
 
-1. O usuário interage via CLI (`ReadlineInputHandler`).
-2. O `PyramidCliController` orquestra os casos de uso.
-3. `CreatePyramidUseCase` gera a pirâmide usando o `PyramidGeneratorService`.
-4. Resultado é salvo em `MemoryPyramidRepository`.
-5. Saída formatada é exibida pelo `ConsoleOutputPresenter`.
-6. `CalculateStatisticsUseCase` calcula total acumulado de linhas.
+### Application (Regras de caso de uso)
+
+- `use-cases/`: Lógica dos casos de uso (ex: criar pirâmide, calcular estatísticas).
+- `dto/`: Objetos de transferência de dados.
+- `interfaces/`: Portas (abstrações) para entrada, saída, repositórios, etc.
+
+### Infrastructure (Detalhes de implementação)
+
+- `cli/`: Entrada e saída via terminal.
+- `generators/`: Implementação concreta da geração de pirâmide.
+- `repositories/`: Armazenamento em memória.
+- `container/`: Injeção de dependência.
+
+### Shared
+
+- Utilitários comuns (`utils/`, `types/`).
+
+## Fluxo Geral
+
+```
+Usuário ↔ CLI ↔ Controller ↔ UseCases ↔ Core ↔ Output
+                                ↕
+                             Services
+```
 
 ## Testes
 
-- Utiliza Jest com testes unitários para VOs, entidades e casos de uso.
-- Configuração permite uso de aliases para importação.
-
-## Extensibilidade
-
-- Facilidade para adicionar novas formas ou interfaces (ex: web).
-- Repositórios podem ser substituídos por persistência real.
+Localizados em `tests/`, espelham a estrutura da `src/`. Usam `jest`.
