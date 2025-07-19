@@ -1,5 +1,7 @@
+import { pyramidCliController } from "./infrastructure/container/dependency-injection.container";
+
 async function main(): Promise<void> {
-  console.log("Hello World");
+  await pyramidCliController.run();
 }
 
 main();
