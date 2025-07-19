@@ -1,5 +1,5 @@
-import { PyramidDomainException } from "@core/exceptions/pyramid-domain.exception";
-import { Character } from "@core/value-objects/character.vo";
+import { PyramidDomainException } from "../../../src/core/exceptions/pyramid-domain.exception";
+import { Character } from "../../../src/core/value-objects/character.vo";
 
 describe("Character VO", () => {
   it("deve criar caractere válido", () => {

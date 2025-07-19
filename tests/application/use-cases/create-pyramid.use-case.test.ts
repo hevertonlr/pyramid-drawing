@@ -1,6 +1,6 @@
-import { CreatePyramidUseCase } from "@app/use-cases/create-pyramid.use-case";
-import { PyramidGeneratorService } from "@infra/generators/pyramid-generator.service";
-import { MemoryPyramidRepository } from "@infra/repositories/memory-pyramid.repository";
+import { CreatePyramidUseCase } from "../../../src/application/use-cases/create-pyramid.use-case";
+import { PyramidGeneratorService } from "../../../src/infrastructure/generators/pyramid-generator.service";
+import { MemoryPyramidRepository } from "../../../src/infrastructure/repositories/memory-pyramid.repository";
 
 describe("CreatePyramidUseCase", () => {
   let createUseCase: CreatePyramidUseCase;

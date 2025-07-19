@@ -11,7 +11,5 @@ export class Character {
     this.value = value;
   }
 
-  getValue(): string {
-    return this.value;
-  }
+  getValue = (): string => this.value;
 }

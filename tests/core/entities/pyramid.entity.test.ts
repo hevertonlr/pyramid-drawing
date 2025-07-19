@@ -1,5 +1,5 @@
-import { Pyramid } from "@core/entities/pyramid.entity";
-import { PyramidConfig } from "@core/value-objects/pyramid-config.vo";
+import { Pyramid } from "../../../src/core/entities/pyramid.entity";
+import { PyramidConfig } from "../../../src/core/value-objects/pyramid-config.vo";
 
 describe("Pyramid Entity", () => {
   it("deve gerar pirâmide normal com 1 unidade", () => {
