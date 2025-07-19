@@ -3,8 +3,8 @@ import { ReadlineInputHandler } from "../cli/readline-input.handler";
 import { PyramidGeneratorService } from "../generators/pyramid-generator.service";
 import { MemoryPyramidRepository } from "../repositories/memory-pyramid.repository";
 
-import { CalculateStatisticsUseCase } from "../../application/use-cases/calculate-statistics.use-case";
-import { CreatePyramidUseCase } from "../../application/use-cases/create-pyramid.use-case";
+import { CalculateStatisticsUseCase } from "@app/use-cases/calculate-statistics.use-case";
+import { CreatePyramidUseCase } from "@app/use-cases/create-pyramid.use-case";
 import { PyramidCliController } from "../cli/pyramid-cli.controller";
 
 // Adaptadores e serviços

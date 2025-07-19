@@ -1,4 +1,4 @@
-import { PyramidOrientation } from "../../shared/types/common.types";
+import { PyramidOrientation } from "@shared/types/common.types";
 import { PyramidDomainException } from "../exceptions/pyramid-domain.exception";
 import { Character } from "./character.vo";
 import { Height } from "./height.vo";

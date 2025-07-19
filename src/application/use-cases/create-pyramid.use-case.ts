@@ -1,4 +1,4 @@
-import { PyramidConfig } from "../../core/value-objects/pyramid-config.vo";
+import { PyramidConfig } from "@core/value-objects/pyramid-config.vo";
 import { PyramidInputDto } from "../dto/pyramid-input.dto";
 import { PyramidOutputDto } from "../dto/pyramid-output.dto";
 import { IPyramidGenerator } from "../interfaces/pyramid-generator.interface";

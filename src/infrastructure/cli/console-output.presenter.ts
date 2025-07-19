@@ -1,5 +1,5 @@
-import { PyramidOutputDto } from "../../application/dto/pyramid-output.dto";
-import { IOutputPresenter } from "../../application/interfaces/output-presenter.interface";
+import { PyramidOutputDto } from "@app/dto/pyramid-output.dto";
+import { IOutputPresenter } from "@app/interfaces/output-presenter.interface";
 
 export class ConsoleOutputPresenter implements IOutputPresenter {
   present(output: PyramidOutputDto): void {
