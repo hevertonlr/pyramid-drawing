@@ -11,7 +11,5 @@ export class Height {
     this.value = value;
   }
 
-  getValue(): number {
-    return this.value;
-  }
+  getValue = (): number => this.value;
 }

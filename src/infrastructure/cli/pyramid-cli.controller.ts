@@ -1,7 +1,7 @@
-import { IInputHandler } from "@app/interfaces/input-handler.interface";
-import { IOutputPresenter } from "@app/interfaces/output-presenter.interface";
-import { CalculateStatisticsUseCase } from "@app/use-cases/calculate-statistics.use-case";
-import { CreatePyramidUseCase } from "@app/use-cases/create-pyramid.use-case";
+import { IInputHandler } from "../../application/interfaces/input-handler.interface";
+import { IOutputPresenter } from "../../application/interfaces/output-presenter.interface";
+import { CalculateStatisticsUseCase } from "../../application/use-cases/calculate-statistics.use-case";
+import { CreatePyramidUseCase } from "../../application/use-cases/create-pyramid.use-case";
 
 export class PyramidCliController {
   constructor(

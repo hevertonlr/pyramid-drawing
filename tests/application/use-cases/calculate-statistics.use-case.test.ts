@@ -1,7 +1,7 @@
-import { CalculateStatisticsUseCase } from "@app/use-cases/calculate-statistics.use-case";
-import { Pyramid } from "@core/entities/pyramid.entity";
-import { PyramidConfig } from "@core/value-objects/pyramid-config.vo";
-import { MemoryPyramidRepository } from "@infra/repositories/memory-pyramid.repository";
+import { CalculateStatisticsUseCase } from "../../../src/application/use-cases/calculate-statistics.use-case";
+import { Pyramid } from "../../../src/core/entities/pyramid.entity";
+import { PyramidConfig } from "../../../src/core/value-objects/pyramid-config.vo";
+import { MemoryPyramidRepository } from "../../../src/infrastructure/repositories/memory-pyramid.repository";
 
 describe("CalculateStatisticsUseCase", () => {
   let statsUseCase: CalculateStatisticsUseCase;

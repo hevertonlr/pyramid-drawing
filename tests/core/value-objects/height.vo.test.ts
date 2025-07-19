@@ -1,5 +1,5 @@
-import { PyramidDomainException } from "@core/exceptions/pyramid-domain.exception";
-import { Height } from "@core/value-objects/height.vo";
+import { PyramidDomainException } from "../../../src/core/exceptions/pyramid-domain.exception";
+import { Height } from "../../../src/core/value-objects/height.vo";
 
 describe("Height VO", () => {
   it("deve criar altura válida", () => {
