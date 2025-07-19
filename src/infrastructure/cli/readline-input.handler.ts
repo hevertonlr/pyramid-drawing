@@ -1,7 +1,7 @@
+import { PyramidInputDto } from "@app/dto/pyramid-input.dto";
+import { IInputHandler } from "@app/interfaces/input-handler.interface";
+import { ValidationUtil } from "@shared/utils/validation.util";
 import readline from "readline";
-import { PyramidInputDto } from "../../application/dto/pyramid-input.dto";
-import { IInputHandler } from "../../application/interfaces/input-handler.interface";
-import { ValidationUtil } from "../../shared/utils/validation.util";
 
 export class ReadlineInputHandler implements IInputHandler {
   private rl = readline.createInterface({

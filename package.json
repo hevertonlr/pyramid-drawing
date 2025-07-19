@@ -14,19 +14,23 @@
     "clean": "rm -rf dist",
     "install-global": "pnpm run build && pnpm install -g ."
   },
-  "devDependencies": {
-    "@types/node": "^20.0.0",
-    "typescript": "^5.0.0",
-    "ts-node": "^10.9.0",
-    "jest": "^29.0.0",
-    "@types/jest": "^29.0.0"
-  },
   "keywords": [
     "pyramid",
     "shell",
     "clean-architecture",
     "typescript"
   ],
-  "author": "Developer",
-  "license": "MIT"
+  "author": "Heverton Luan Roieski (hevertonlr@gmail.com)",
+  "license": "MIT",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.0.0",
+    "@types/node": "^20.0.0",
+    "jest": "^29.0.0",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.0"
+  }
 }

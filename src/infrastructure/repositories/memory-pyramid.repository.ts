@@ -1,5 +1,5 @@
-import { IPyramidRepository } from "../../application/interfaces/pyramid-repository.interface";
-import { Pyramid } from "../../core/entities/pyramid.entity";
+import { IPyramidRepository } from "@app/interfaces/pyramid-repository.interface";
+import { Pyramid } from "@core/entities/pyramid.entity";
 
 export class MemoryPyramidRepository implements IPyramidRepository {
   private readonly pyramids: Pyramid[] = [];
